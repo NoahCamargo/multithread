@@ -1,12 +1,12 @@
 module Multithread
   class Array
     class << self
-      def each list, threads = 3, allow_error: true, messages: true, error: "MultiThread.each:", &block
+      def each list, threads = 3, allow_error: true, messages: true, error: "Multithread.each:", &block
         run(list, threads, allow_error, error, false, messages, block)
         return list
       end
   
-      def map list, threads = 3, allow_error: true, messages: true, error: "MultiThread.map:", &block
+      def map list, threads = 3, allow_error: true, messages: true, error: "Multithread.map:", &block
         run(list, threads, allow_error, error, true, messages, block)
       end
   
