@@ -1,5 +1,5 @@
 module Multithread
-  class Array
+  class List
     class << self
       def each list, threads = 3, allow_error: true, messages: true, error: "Multithread.each:", &block
         run(list, threads, allow_error, error, false, messages, block)
