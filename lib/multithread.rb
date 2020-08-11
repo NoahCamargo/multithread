@@ -1,5 +1,5 @@
 require "multithread/version"
-require 'multithread/array'
+require 'multithread/list'
 
 module Multithread
   class Error < StandardError; end
